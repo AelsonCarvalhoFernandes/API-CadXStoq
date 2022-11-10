@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Cad X Stoq - Produtos {% endblock %}
+
+{% block content %}
+    {% for post in prod %}
+        <div class="produtos">
+            <p>{{post.name}}</p>
+            <p>{{post.quant}}</p>
+            <p>{{post.price}}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
